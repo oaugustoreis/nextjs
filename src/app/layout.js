@@ -20,11 +20,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main>
-          <ul className="text-white font-semibold flex flex-col items-center m-4">
-            <li><Link href="/landpage">Ir para Land Page</Link></li>
-            <li><Link href="/login">Ir para Login</Link></li>
-          </ul>
+        <main>   
         </main>
         <div className=" flex flex-col items-center justify-center min-h-screen py-2">
           {children}
