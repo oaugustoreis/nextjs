@@ -9,7 +9,28 @@ html{
 
 .hr{
     background-color: white;
-    height:230px;
+    height:324px;
     width: 1px;
     align-self: center;
+}
+.card{
+    width: 263px;
+    border-radius: 12px;
+}
+.degrade, .degrade2{
+    width: 370px;
+    height: 100px;
+    position: relative;
+    left: 18%;
+    top: 16%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 10%, rgba(255, 255, 255, 0) 100%);
+}
+.degrade2{
+    left: 18%;
+    top: -25%;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 20%, rgba(255, 255, 255, 0) 100%);
+}
+.icons{
+    color: white;
 }
