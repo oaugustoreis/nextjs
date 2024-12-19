@@ -31,6 +31,9 @@ export default function Home() {
         fetchData();
     }, []);
     const router = useRouter();
+    const handleLandSubmit = (event) => {
+        router.push('/landpage');
+    }
     const handleRegisterSubmit = (event) => {
         event.preventDefault();
         console.log("Registro enviado");
@@ -115,7 +118,7 @@ export default function Home() {
                 </div>
                 <div className='text-white font-semibold leading-loose w-10/12 text-center'>
                     <p>A Grow Up é uma plataforma que conecta estudantes e profissionais com objetivos em comum, facilitando a formação de equipes e networking.</p>
-                    <input className="outline cursor-pointer outline-1 mt-3 px-5 py-1 w-36 text-white rounded-3xl" type="submit" value="Saiba Mais" />
+                    <input onSubmit={handleLandSubmit} className="outline cursor-pointer outline-1 mt-3 px-5 py-1 w-36 text-white rounded-3xl" type="submit" value="Saiba Mais" />
                 </div>
                 <div className='degrade2'></div>
             </div>
